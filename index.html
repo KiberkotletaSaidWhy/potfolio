@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Портфолио</title>
+<script>
+// Set the theme before the page is painted, so there is no flash
+(function(){var t;try{t=localStorage.getItem('theme')}catch(e){}
+if(!t)t=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
+document.documentElement.dataset.theme=t})();
+</script>
+<link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="#top" id="logo"></a>
+  <nav>
+    <a href="#works">Работы</a>
+    <a href="#contact">Контакты</a>
+    <button id="theme" type="button" aria-label="Сменить тему"></button>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <h1 id="name"></h1>
+    <p id="tagline"></p>
+  </section>
+
+  <section id="works">
+    <div id="filters" class="filters" role="group" aria-label="Фильтр по тегам"></div>
+    <div id="gallery" class="grid"></div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 id="contactTitle">Контакты</h2>
+    <p id="contactText"></p>
+    <ul id="contacts"></ul>
+  </section>
+</main>
+
+<footer><span id="copy"></span></footer>
+
+<div class="lb" id="lb" hidden>
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Закрыть">&times;</button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Предыдущая">&#8249;</button>
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Следующая">&#8250;</button>
+  <figure class="lb-fig" id="lbFig">
+    <img id="lbImg" alt="">
+    <figcaption>
+      <h3 id="lbTitle"></h3>
+      <p class="lb-meta" id="lbMeta"></p>
+      <p id="lbDesc"></p>
+    </figcaption>
+  </figure>
+</div>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>
