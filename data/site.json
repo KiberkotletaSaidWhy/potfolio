@@ -1,0 +1,11 @@
+{
+  "title": "Портфолио",
+  "name": "Игорь Демидчук",
+  "tagline": "Концепт-художник и геймдизайнер. Рисую персонажей, окружение и создаю концепты для видеоигр.",
+  "contactTitle": "Контакты",
+  "contactText": "Открыт к заказам и сотрудничеству. Пишите на почту или в соцсети.",
+  "email": "vodyanoychel@gmail.com",
+  "links": [
+    { "label": "Instagram", "url": "https://www.instagram.com/igor_dzemidchuk" }
+  ]
+}
